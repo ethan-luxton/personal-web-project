@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+}
+li {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #D9D9D9;
+    text-decoration: none;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.drop {
+    display: inline-block;
+    color: #BF0B3B;
+    background-color: #0d0d0d00;
+    border-radius: 10px;
+    border-color: #ffffff00;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.drop:hover {
+    color: #D9D9D9;
+}
+#dropdown {
+    position: relative;
+    display: inline-block;
+}
+#dropdown:hover .menu-content {
+    display: block;
+}
+.menu-content {
+    display: none;
+    position: absolute;
+    background-color: #595959;
+    min-width: 160px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.menu-content a {
+    color: #D9D9D9;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Andale Mono, monospace;
+}
+.menu-content a:hover {
+    text-decoration: underline;
+}
+.htext {
+    color: #D9D9D9;
+    font-family: 'Montserrat', sans-serif;
+    
+    font-weight: 500;
+}
+.htext > .fa-solid.fa-code {
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    color: #D9D9D9;
+    font-size: 24px;
+    
+}
+.cta > button{
+    background-color: #BF0B3B;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.712);;
+    font-size: 17px;
+    color: #D9D9D9;
+    width: 50px;
+}
+.cta > button > i {
+    background-color: #BF0B3B;
+}
+.cta > button > i.fa-envelope-open {
+    display: none;
+}
+.cta > button:hover > i.fa-envelope-open {
+    display: block;
+}
+.cta > button:hover > i.fa-envelope {
+    display: none;
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
