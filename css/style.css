@@ -120,7 +120,7 @@ header {
     
 }
 @media (min-width: 768px) {
-    .api__photo-grid {
+    .photo-grid {
         height:500px;
         background-size:2420px;
         width:7260px
