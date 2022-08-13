@@ -95,6 +95,7 @@ header {
 }
 .cta > button:hover > i.fa-envelope {
     display: none;
+    
 }
 @keyframes spin {
     from {
@@ -104,3 +105,45 @@ header {
         transform:rotate(360deg);
     }
 }
+.scroll-grid-container {
+    overflow:hidden;
+    margin-top: 7rem;
+}
+.photo-grid {
+    height:330px;
+    background-size:1600px;
+    background-repeat:repeat-x;
+    background-position:center;
+    width:4800px;
+    -webkit-animation:scroll-grid 120s linear infinite;
+    animation:scroll-grid 120s linear infinite;
+    
+}
+@media (min-width: 768px) {
+    .api__photo-grid {
+        height:500px;
+        background-size:2420px;
+        width:7260px
+    }
+}
+@-webkit-keyframes scroll-grid {
+    0% {
+        -webkit-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0)
+    }
+    100% {
+        -webkit-transform:translate3d(-2420px, 0, 0);
+        transform:translate3d(-2420px, 0, 0)
+    }
+}
+@keyframes scroll-grid {
+0% {
+    -webkit-transform:translate3d(0, 0, 0);
+    transform:translate3d(0, 0, 0)
+}
+100% {
+    -webkit-transform:translate3d(-2420px, 0, 0);
+    transform:translate3d(-2420px, 0, 0)
+}
+}
+   
